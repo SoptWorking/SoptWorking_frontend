@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 const StyledInput = styled.input`
@@ -6,20 +6,17 @@ const StyledInput = styled.input`
   height: 3rem;
 `;
 
-const InputComponent = ({
-  onHandleInputChange,
-  username,
-  onHandleSubmit,
-  loading,
-}) => {
-  return (
-    <>
-      {/* {loading && <div style={{ color: "white" }}>로딩중입니다.</div>} */}
-      <form onSubmit={onHandleSubmit}>
-        <StyledInput onChange={onHandleInputChange} value={username} />
-      </form>
-    </>
-  );
-};
+const InputComponent = forwardRef(
+  ({ onHandleInputChange, username, onHandleSubmit, loading }, ref) => {
+    return (
+      <>
+        {/* {loading && <div style={{ color: "white" }}>로딩중입니다.</div>} */}
+        <form onSubmit={onHandleSubmit}>
+          <StyledInput ref={ref} onChange={onHandleInputChange} />
+        </form>
+      </>
+    );
+  }
+);
 
 export default InputComponent;

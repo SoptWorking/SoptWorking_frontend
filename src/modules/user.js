@@ -17,7 +17,6 @@ const [
 ] = createRequestActionTypes("user/GET_REPOS");
 
 export const getUser = createAction(GET_USER, (username) => username);
-
 export const getRepo = createAction(GET_REPOS, (username) => username);
 
 const getUserSaga = createRequestSaga(GET_USER, userAPI.userInfo);
