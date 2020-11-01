@@ -1,10 +1,13 @@
 import React from "react";
-
+import ResponsiveTemplate from "../components/common/ResponsiveTemplate";
+import InputContainer from "../containers/input/InputContainer";
+import ResultContainer from "../containers/result/ResultContainer";
 const MainPage = () => {
   return (
-    <>
-      <div>메인 페이지</div>
-    </>
+    <ResponsiveTemplate>
+      <InputContainer />
+      <ResultContainer />
+    </ResponsiveTemplate>
   );
 };
 
