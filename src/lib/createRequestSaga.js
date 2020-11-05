@@ -1,6 +1,5 @@
 import { put, call } from "redux-saga/effects";
 import { startLoading, finishLoading } from "../modules/loading";
-import { getRepo } from "../modules/user";
 
 export const createRequestActionTypes = (type) => {
   const SUCCESS = `${type}_SUCCESS`;
@@ -10,19 +9,16 @@ export const createRequestActionTypes = (type) => {
 
 export default function createRequestSage(type, request) {
   const SUCCESS = `${type}_SUCCESS`;
-  // GET_USER_USER
   const FAILURE = `${type}_FAILURE`;
   return function* (action) {
     yield put(startLoading(type));
     try {
-      const response = yield call(request, action.payload); //username payload : 'donghune'
-      console.log(response);
+      const response = yield call(request, action.payload);
       yield put({
         type: SUCCESS,
         payload: response.data,
         meta: response,
       });
-      // if (type === "user/GET_USER") yield put(getRepo(response.data.name));
     } catch (error) {
       yield put({
         type: FAILURE,
