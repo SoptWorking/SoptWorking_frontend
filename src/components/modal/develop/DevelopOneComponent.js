@@ -11,9 +11,9 @@ const Wrap = styled.div`
 `;
 
 
-const HeadStr = "해보고 싶은 디자인";
+const HeadStr = "도전해보고 싶은 개발";
 
-const DesignOneComponent = (props) => {
+const DevelopOneComponent = (props) => {
     return(
         <>
             <Wrap>
@@ -27,4 +27,4 @@ const DesignOneComponent = (props) => {
     );
 };
 
-export default DesignOneComponent;
+export default DevelopOneComponent;

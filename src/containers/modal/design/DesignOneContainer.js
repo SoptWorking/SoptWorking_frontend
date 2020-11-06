@@ -2,10 +2,10 @@ import React from 'react';
 import DesignOneComponent from '../../../components/modal/design/DesignOneComponent';
 
 
-const DesignOneContainer = () => {
+const DesignOneContainer = (props) => {
     return(
         <>
-            <DesignOneComponent />
+            <DesignOneComponent IsIntroduce={props.IsIntroduce}/>
         </>
     );
 };

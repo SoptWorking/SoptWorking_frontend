@@ -1,11 +1,11 @@
 import React from 'react';
-import DesignTwoComponent from '../../components/modal/design/DesignTwoComponent';
+import DesignTwoComponent from '../../../components/modal/design/DesignTwoComponent';
 
 
-const DesignTwoContainer = () => {
+const DesignTwoContainer = (props) => {
     return(
         <>
-            <DesignTwoComponent />
+            <DesignTwoComponent IsIntroduce={props.IsIntroduce}/>
         </>
     );
 };

@@ -13,27 +13,42 @@ const Wrap = styled.div`
 const ItemWrap = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0.52vw;
 `;
 
 const Item = styled.div`
-    margin-right: 0.8rem;
-    border-radius: 0.5rem;
-    border: solid 0.1rem #cacaca;
+    width: 3.8rem;
+    height: 1.3rem;
+    margin-right: 0.5vw;
+    border-radius: 0.1rem;
+    border: solid 0.08rem #cacaca;
     background-color: #e5ebf6;
-    font-size: 2rem;
+    font-size: 0.7rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 0.65;
+    line-height: 1.3rem;
     letter-spacing: normal;
     text-align: left;
+    padding-left: 0.3rem;
     color: #8192b3;
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
+    @media (orientation: landscape) {
+        
+    }
 `;
 
 
 const HeadStr = "나의 디자인스타일";
 
-const DesignTwoComponent = () => {
+const DesignTwoComponent = (props) => {
     return(
         <>
             <Wrap>
@@ -42,13 +57,13 @@ const DesignTwoComponent = () => {
                     head={HeadStr}
                 />
                 <ItemWrap>
-                    <Item></Item>
-                    <Item></Item>
-                    <Item></Item>
-                    <Item></Item>
-                    <Item></Item>
+                    <Item>심플한</Item>
+                    <Item>모던한</Item>
+                    <Item>귀여운</Item>
+                    <Item>세련된</Item>
+                    <Item>세련된</Item>
                 </ItemWrap>
-                <TextBoxContainer />
+                <TextBoxContainer IsIntroduce={props.IsIntroduce}/>
             </Wrap>
         </>
     );

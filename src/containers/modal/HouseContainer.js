@@ -1,10 +1,10 @@
 import React from 'react';
 import HouseComponent from '../../components/modal/house/HouseComponent';
 
-const HouseContainer = () => {
+const HouseContainer = (props) => {
     return(
         <>
-            <HouseComponent />
+            <HouseComponent IsIntroduce={props.IsIntroduce}/>
         </>
     );
 };

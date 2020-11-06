@@ -1,10 +1,10 @@
 import React from 'react';
 import TextBoxComponent from '../../components/modal/common/TextBoxComponent';
 
-const TextBoxContainer = () => {
+const TextBoxContainer = (props) => {
     return(
         <>
-            <TextBoxComponent />
+            <TextBoxComponent IsIntroduce={props.IsIntroduce}/>
         </>
     );
 };

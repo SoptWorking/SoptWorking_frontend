@@ -12,7 +12,7 @@ const Wrap = styled.div`
 
 const HeadStr = "원하는 합숙소의 모습";
 
-const HouseComponent = () => {
+const HouseComponent = (props) => {
     return(
         <>
             <Wrap>
@@ -20,7 +20,7 @@ const HouseComponent = () => {
                     path={ImgPath} 
                     head={HeadStr}
                 />
-                <TextBoxContainer />
+                <TextBoxContainer IsIntroduce={props.IsIntroduce}/>
             </Wrap>
         </>
     );

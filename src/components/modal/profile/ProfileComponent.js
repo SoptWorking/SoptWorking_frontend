@@ -9,24 +9,39 @@ const ProfileWrap = styled.div`
     width: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
 `;
 
 const ProfileImage = styled.img`
-    width: 24.4rem;
-    height: 24.4rem;
-    border-radius: 1rem;
-    border: 0.8rem solid #ffffff;
-    box-shadow: 0 0 2rem 0 rgba(38, 44, 52, 0.2);
+    width: 20vw;
+    height: 20vw;
+    border-radius: 0.4rem;
+    border: 0.5vw solid #ffffff;
+    box-shadow: 0 0 0.33rem 0 rgba(38, 44, 52, 0.2);
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
 `;
 
 const ProfileDescribe = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 7.3rem;
+    margin-left: 3.8vw;
+    @media (min-width: 768px){
+
+    }
+
+    @media (min-width: 1024px){
+
+    }
 `;
 
 const ProfilePart = styled.div`
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -34,15 +49,24 @@ const ProfilePart = styled.div`
     letter-spacing: normal;
     text-align: left;
     color: #063187;
+    @media (min-width: 768px){
+        font-size:
+    }
+
+    @media (min-width: 1024px){
+        font-size:
+    }
 `;
 
 const ProfileNameKeword = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 1vw;
 `;
 
 const ProfileName = styled.div`
-    font-size: 4.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -50,17 +74,37 @@ const ProfileName = styled.div`
     letter-spacing: normal;
     text-align: left;
     color: #2e2e2e;
+    margin-right: 0.4rem;
+    @media (min-width: 768px){
+        font-size:
+    }
+
+    @media (min-width: 1024px){
+        font-size:
+    }
 `;
 
 
 const ProfileKeywords = styled.div`
-    width: 15.5rem;
-    height: 4.1rem;
-    border-radius: 0.5rem;
+    width: 5rem;
+    height: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 0.1rem;
     border: solid 1px #e5ebf6;
     background-color: #e5ebf6;
     color: #8192b3;
-    margin: 1rem;
+    margin-right: 0.2rem;
+    @media (min-width: 768px){
+        border-radius:
+        margin:
+    }
+
+    @media (min-width: 1024px){
+        border-radius:
+        margin:
+    }
 `;
 
 const ProfileList = styled.div`
@@ -71,15 +115,25 @@ const ProfileList = styled.div`
 const ProfileListItem = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.2rem;
 `;
 
 const ProfileListItemImage = styled.img`
-    width: 2rem;
-    height: 2rem;
+    width: 2vw;
+    height: 2vw;
+    margin-right: 0.2rem;
+    @media (min-width: 768px){
+        margin-bottom:
+    }
+
+    @media (min-width: 1024px){
+        margin-bottom:
+    }
 `;
 
 const ProfileListItemText = styled.div`
-    font-size: 1.7rem;
+    font-size: 0.7rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -87,6 +141,13 @@ const ProfileListItemText = styled.div`
     letter-spacing: normal;
     text-align: left;
     color: #2e2e2e;
+    @media only screen and (min-width: 768px){
+        font-size:
+    }
+
+    @media only screen and (min-width: 1024px){
+        font-size:
+    }
 `;
 
 
@@ -95,24 +156,24 @@ const ProfileComponent = () => {
         <ProfileWrap>
             <ProfileImage />
             <ProfileDescribe>
-                <ProfilePart></ProfilePart>
+                <ProfilePart>26th PLAN</ProfilePart>
                 <ProfileNameKeword>
-                    <ProfileName></ProfileName>
-                    <ProfileKeywords></ProfileKeywords>
-                    <ProfileKeywords></ProfileKeywords>
+                    <ProfileName>이현진</ProfileName>
+                    <ProfileKeywords>아아아아아아아</ProfileKeywords>
+                    <ProfileKeywords>아아아아아아아</ProfileKeywords>
                 </ProfileNameKeword>
                 <ProfileList>
                     <ProfileListItem>
                         <ProfileListItemImage src={ImgBirth}/>
-                        <ProfileListItemText></ProfileListItemText>
+                        <ProfileListItemText>2020.11.07</ProfileListItemText>
                     </ProfileListItem>
                     <ProfileListItem>
                         <ProfileListItemImage src={ImgSchool}/>
-                        <ProfileListItemText></ProfileListItemText>
+                        <ProfileListItemText>연세대학교 컴퓨터과학과</ProfileListItemText>
                     </ProfileListItem>
                     <ProfileListItem>
                         <ProfileListItemImage src={ImgHeart}/>
-                        <ProfileListItemText></ProfileListItemText>
+                        <ProfileListItemText>관심분야가 들어갑니다.</ProfileListItemText>
                     </ProfileListItem>
                 </ProfileList>
             </ProfileDescribe>
