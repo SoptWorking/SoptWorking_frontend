@@ -14,7 +14,10 @@ import PlanOneContainer from '../containers/modal/plan/PlanOneContainer';
 import PlanTwoContainer from '../containers/modal/plan/PlanTwoContainer';
 
 const SpaceTop = styled.div`
-    height: 14vw;
+    height: 13vw;
+    @media (min-width: 768px){
+        height: 9vw;
+    }
 `;
 const Space_1 = styled.div`
     height: 1.3vw; 
@@ -23,10 +26,16 @@ const Space_2 = styled.div`
     height: 2.5vw;
 `;
 const Space_3 = styled.div`
-    height: 20vw;
+    height: 15vw;
+    @media (min-width: 768px){
+        height: 11vw;
+    }
 `;
 const SpaceBottom = styled.div`
     height: 10vw;
+    @media (min-width: 768px){
+        height: 6vw;
+    }
 `;
 
 const ModalPage = () => {

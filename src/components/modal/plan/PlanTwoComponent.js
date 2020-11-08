@@ -10,7 +10,7 @@ const Wrap = styled.div`
 `;
 
 const ValueWrap = styled.div`
-    width: 65vw;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,7 @@ const ValueWrap = styled.div`
 `;
 
 const Value = styled.div`
-    width: 20vw;
+    width: 31%;
     height: 7vw;
     font-size: 0.7rem;
     font-family: NotoSansCJKkr;
@@ -30,7 +30,7 @@ const Value = styled.div`
     text-align: center;
     color: #2e2e2e;
     border-radius: 0.3vw;
-    border: solid 0.08rem #cacaca;
+    border: solid 0.05rem #cacaca;
     background-color: #ffffff;
 `;
 

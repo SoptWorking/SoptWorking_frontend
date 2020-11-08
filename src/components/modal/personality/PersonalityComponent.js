@@ -12,9 +12,16 @@ const Wrap = styled.div`
 const ItemWrap = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-itmes: center;
 `;
 
 const ItemBox = styled.div`
+    width: 22%;
+    height: 7vw;
+    border-radius: 0.3vw;
+    border: solid 0.05rem #cacaca;
+    background-colcor: #ffffff;
 `;
 
 
@@ -29,6 +36,9 @@ const PersonalityComponent = () => {
                     head={HeadStr}
                 />
                 <ItemWrap>
+                    <ItemBox></ItemBox>
+                    <ItemBox></ItemBox>
+                    <ItemBox></ItemBox>
                     <ItemBox></ItemBox>
                 </ItemWrap>
             </Wrap>

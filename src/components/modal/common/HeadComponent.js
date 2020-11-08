@@ -14,7 +14,8 @@ const HeadImage = styled.img`
     height: 2.5vw;
     margin-right: 0.3rem;
     @media (min-width: 768px){
-
+        width: 1.8vw;
+        height: 1.8vw;
     }
 
     @media (min-width: 1024px){
@@ -26,7 +27,7 @@ const HeadImage = styled.img`
 `;
 
 const Head = styled.div`
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -35,7 +36,7 @@ const Head = styled.div`
     text-align: left;
     color: #063187;
     @media (min-width: 768px){
-
+        font-size: 0.6rem;
     }
 
     @media (min-width: 1024px){

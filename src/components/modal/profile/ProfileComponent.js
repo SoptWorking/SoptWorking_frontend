@@ -19,7 +19,11 @@ const ProfileImage = styled.img`
     border: 0.5vw solid #ffffff;
     box-shadow: 0 0 0.33rem 0 rgba(38, 44, 52, 0.2);
     @media (min-width: 768px){
-
+        width: 11.5vw;
+        height: 11.5vw;
+        border-radius: 0.2rem;
+        border: 0.5vw solid #ffffff;
+        box-shadow: 0 0 0.22rem 0 rgba(38, 44, 52, 0.2);
     }
 
     @media (min-width: 1024px){
@@ -32,7 +36,7 @@ const ProfileDescribe = styled.div`
     flex-direction: column;
     margin-left: 3.8vw;
     @media (min-width: 768px){
-
+        margin-left: 3.2vw;
     }
 
     @media (min-width: 1024px){
@@ -50,7 +54,7 @@ const ProfilePart = styled.div`
     text-align: left;
     color: #063187;
     @media (min-width: 768px){
-        font-size:
+        font-size: 0.5rem;
     }
 
     @media (min-width: 1024px){
@@ -76,7 +80,7 @@ const ProfileName = styled.div`
     color: #2e2e2e;
     margin-right: 0.4rem;
     @media (min-width: 768px){
-        font-size:
+        font-size: 1.2rem;
     }
 
     @media (min-width: 1024px){
@@ -97,13 +101,14 @@ const ProfileKeywords = styled.div`
     color: #8192b3;
     margin-right: 0.2rem;
     @media (min-width: 768px){
-        border-radius:
-        margin:
+        width: 4.7rem;
+        height: 1.1rem;
+        line-height: 1.1rem;
+        font-size: 0.6rem;
     }
 
     @media (min-width: 1024px){
-        border-radius:
-        margin:
+
     }
 `;
 
@@ -117,6 +122,9 @@ const ProfileListItem = styled.div`
     flex-direction: row;
     align-items: center;
     margin-bottom: 0.2rem;
+    @media (min-width: 768px){
+        margin-bottom: 0.1rem;
+    }
 `;
 
 const ProfileListItemImage = styled.img`
@@ -124,7 +132,9 @@ const ProfileListItemImage = styled.img`
     height: 2vw;
     margin-right: 0.2rem;
     @media (min-width: 768px){
-        margin-bottom:
+        width: 1vw;
+        height: 1vw;
+        margin-right: 0.15rem;
     }
 
     @media (min-width: 1024px){
@@ -142,11 +152,18 @@ const ProfileListItemText = styled.div`
     text-align: left;
     color: #2e2e2e;
     @media only screen and (min-width: 768px){
-        font-size:
+        font-size: 0.5rem;
     }
 
     @media only screen and (min-width: 1024px){
         font-size:
+    }
+`;
+
+const EmptySpace = styled.div`
+    @media( min-width: 768px ){
+        width: 12vw;
+        height: auto;
     }
 `;
 
@@ -177,6 +194,7 @@ const ProfileComponent = () => {
                     </ProfileListItem>
                 </ProfileList>
             </ProfileDescribe>
+            <EmptySpace />
         </ProfileWrap>
     );
 };

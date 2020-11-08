@@ -10,10 +10,10 @@ const Wrap = styled.div`
 `;
 
 const ProjectWrap = styled.div`
-    width: 65vw;
+    width: auto;
     height: auto;
     border-radius: 0.3vw;
-    border: solid 0.08rem #cacaca;
+    border: solid 0.05rem #cacaca;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,13 @@ const ProjectWrap = styled.div`
 `;
 
 const Project = styled.div`
+    width: 90%;
     display: flex;
     flex-direction: column;
 `;
 
 const ProjectTitle = styled.div`
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: NotoSansCJKkr;
     font-weight: bold;
     font-stretch: normal;
@@ -41,7 +42,7 @@ const ProjectTitle = styled.div`
 `;
 
 const ProjectDescribe = styled.div`
-    width: 57vw;
+    width: auto;
     height: auto;
     font-size: 0.7rem;
     font-family: NotoSansCJKkr;
@@ -53,12 +54,15 @@ const ProjectDescribe = styled.div`
     text-align: left;
     color: #2e2e2e;
     margin-bottom: 1.2vw;
+    @media (min-width: 768px){
+        font-size: 0.6rem;
+    }
 `;
 
-const Line = styled.hr`
-    border: solid 0.08rem #cacaca;
-    width: 57vw;
-    height: 0;
+const Line = styled.div`
+    background-color: #cacaca;
+    width: 90%;
+    height: 0.05rem;
     margin: 0;
 `;
 

@@ -25,6 +25,10 @@ const Button = styled.button`
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    &:active{
+        background-color: #042972;
+    }
+
     @media (min-width: 768px){
 
     }
