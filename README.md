@@ -11,4 +11,5 @@ SOPTWORKING modal page
 ### 상세 이미지
 
 1. iPhone 5/SE
+<br/>
 <img src="./솝트워킹_이미지/soptworking_iphone5.png" width=300px title="iphone_5/SE" alt="iphone_5/SE"></img><br/>
