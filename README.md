@@ -1,10 +1,10 @@
 SOPTWORKING modal page
 --------------
 
-> 개별 멤버들의 프로필 상세정보가 담긴 modal page
-> 반응형으로 구현
-> react 사용
-> redux 사용예정
+> * 개별 멤버들의 프로필 상세정보가 담긴 modal page
+> * 반응형으로 구현
+> * react 사용
+> * redux 사용예정
 
 ----------------
 
