@@ -13,3 +13,12 @@ SOPTWORKING modal page
 1. iPhone 5/SE
 <br/>
 <img src="./솝트워킹_이미지/soptworking_iphone5.png" width=300px title="iphone_5/SE" alt="iphone_5/SE" style="margin:0;padding:0;"></img><br/>
+2. iPhone X
+<br/>
+<img src="./솝트워킹_이미지/soptworking_iphoneX.png" width=300px title="iphone_5/SE" alt="iphone_5/SE" style="margin:0;padding:0;"></img><br/>
+3. iPad
+<br/>
+<img src="./솝트워킹_이미지/soptworking_ipad.png" width=300px title="iphone_5/SE" alt="iphone_5/SE" style="margin:0;padding:0;"></img><br/>
+4. iPad Pro
+<br/>
+<img src="./솝트워킹_이미지/soptworking_ipadPro5.png" width=300px title="iphone_5/SE" alt="iphone_5/SE" style="margin:0;padding:0;"></img><br/>
